@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-title  {
+    color: #87CEFA;
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    color: white;
+    background-color: #87CEFA;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: middle;
+    width: 80%;
+    background: #f1f1f1;
+    color: #87CEFA;
+}
+
+form button {
+    float: middle;
+    width: 20%;
+    padding: 10px;
+    background: #87CEFA;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form::after {
+    clear: "";
+    content: "";
+    display: table;
+}
+/* .btn {
+    background-color: white; 
+    color: yellow; 
+    border: 2px solid #87CEFA;
+    box-shadow: #87CEFA 0 20px 20px ;
+    border-radius: 50%;
+
+}
+
+.btn:hover {
+    background-color: #F8F8FF;
+    color: white;
+    border-radius: 50%;
+} */

@@ -14,19 +14,20 @@
 
 <body class="flex-column min-100-vh">
     <header class="hero">
-        <h1 class="app-title"><em> Weather Dashboard! </em></h1>
+        <h1 class="app-title"><em> Weather Dashboard </em></h1>
         <p>
-            <em> Search to get the weather of your favorite location. </em>
+            <em> Get The Weather For A City  </em>
         </p>
     </header>
-    <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
+    <main class="row justify-content-end">
+        <div class="col-sm-12">
             <div class="card">
-                <h3 class="card-header text-uppercase"><em> Search For City:</em></h3>
-                <form id="user-form" class="card-body">
-                    <label class="form-label" for="searchByCity">City</label>
-                    <input name="searchCity" id="cityInput" type="text" autofocus="true" class="form-input">
-                    <button type="submit" class="btn">Get Weather!!</button>
+                <h3 class="card-header text-uppercase"><em> Search For City</em></h3>
+                <form id="search" class="card-body">
+                    <label class="location" for="searchByCity"></label>
+                    <input name="searchCity" id="cityInput" type="text"  class="form-input" placeholder="Location">
+                    <br></br>
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
@@ -40,7 +41,7 @@
 
         <div class="forecastContainer"></div>
     </main>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/script/script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
