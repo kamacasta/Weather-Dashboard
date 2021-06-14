@@ -29,7 +29,6 @@ form input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
-    float: middle;
     width: 80%;
     background: #f1f1f1;
     color: #87CEFA;
@@ -51,6 +50,12 @@ form::after {
     clear: "";
     content: "";
     display: table;
+}
+
+.currentCard {
+    color:#87CEFA;
+    align-items: center;
+
 }
 /* .btn {
     background-color: white; 
