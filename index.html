@@ -40,14 +40,19 @@
   
     <main class="columns box">
        <div class="column box is-one-quarter">
-            <h3 class="subtitle has-text-centered"><em> Search For City</em></h3>
-            <form id="search" class="card-body form-inline">
+           <form class="form box has-background-warning" id="search">
+            <h2 class="subtitle has-text-centered"><em> Search For City</em></h2>
                 <label class="location" for="searchByCity"></label>
                 <input name="searchCity" id="cityInput" type="text"  class="form-input" placeholder="Location">
-                <button id ="searchBtn" type="submit"><i class="fa fa-search "></i></button>
+                <button class="button is-info is-inverted" id ="searchBtn" type="submit"><i class="fa fa-search "></i></button>
+                <hr class="has-background-info">
+                <div class="column is-full box" id="weatherHistory"></div>
             </form>
         </div>
        </div>
+    <div class="">
+
+    </div>
     </main>
     <!-- <main class="row justify-content-end">
         <div class="col-sm-12">
