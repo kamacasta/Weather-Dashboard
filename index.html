@@ -24,7 +24,7 @@
     </nav>
     <div class="columns is-centered">
         <div class="column is-one-quarter">
-            <article class="box has-background-warning">
+            <article id="box-tile" class="box has-background-warning ">
                 <div>
                     <h1 class="subtitle is-5 has-text-centered">
                         <em> Search the weather to your favorite city!</em>
@@ -38,9 +38,15 @@
         </div>
     </div>
   
-    <main class="columns">
-       <div class="column">
-         
+    <main class="columns box">
+       <div class="column box is-one-quarter">
+            <h3 class="subtitle has-text-centered"><em> Search For City</em></h3>
+            <form id="search" class="card-body form-inline">
+                <label class="location" for="searchByCity"></label>
+                <input name="searchCity" id="cityInput" type="text"  class="form-input" placeholder="Location">
+                <button id ="searchBtn" type="submit"><i class="fa fa-search "></i></button>
+            </form>
+        </div>
        </div>
     </main>
     <!-- <main class="row justify-content-end">
