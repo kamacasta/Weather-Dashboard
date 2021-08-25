@@ -14,6 +14,10 @@ $(document).ready(function () {
         const apiKey = "94591d084c8757a9ff2a1fbb69e284b4";
         const URL1 = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=`
 
+        var weatherHistory = JSON.parse(localStorage.getItem('weatherHistory'))  ?? [];
+        weatherHistory.push(city.value);
+        localStorage.setItem('weatherHistory', JSON.stringify(weatherHistory));
+
         fetch(URL1 + apiKey)
             .then(function (res) {
                 return res.json();
@@ -27,8 +31,6 @@ $(document).ready(function () {
                         return res.json();
                     }).then(function (data) {
                         console.log(data);
-                        
-
                     })
             })
 
