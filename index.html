@@ -44,82 +44,25 @@
                 <input name="searchCity" id="cityInput" type="text"  class="form-input" placeholder="Location">
                 <button class="button is-info is-inverted" id ="searchBtn" type="submit"><i class="fa fa-search "></i></button>
                 <hr class="has-background-info">
-                <div class="column is-full box" id="weatherHistory"></div>
+                <div class="column is-full box weatherHistory" id="weatherHistory"></div>
             </form>
         </div>
        </div>
      <div class="column is-half is-centered box">
          <div class="todaysForecast">
-          <h1 class="title is-3 has-text-centered">
-             Todays Forecast
-          </h1>
-          <img src="" alt="a simple icon reflecting the current weather">
+          <h1 class="title is-3 has-text-centered" id="cityName"></h1>
+          <!-- <img  alt="a simple icon reflecting the current weather" id="iconToday"> -->
+          <span>Temperature: &#176<span id="temp"></span></span>
+            <br>
+            <span id="hum"></span>
+            <br>
+            <span id="wind"></span>
+            <br>
+            <span id="uvi"></span>
          </div>
      </div>
     </section>
-    <!-- <main class="row justify-content-end">
-        <div class="col-sm-12">
-            <div class="card">
-                <h3 class="card-header text-uppercase"><em> Search For City</em></h3>
-                <form id="search" class="card-body form-inline">
-                    <label class="location" for="searchByCity"></label>
-                    <input name="searchCity" id="cityInput" type="text"  class="form-input" placeholder="Location">
-                    <button id ="searchBtn" type="submit"><i class="fa fa-search "></i></button>
-                </form>
-            </div>
-        </div>
-
-        <section class="col-md-5">
-            <div class=" card currentCard">
-                <h4 class="card-header"> <em>Current Forecast</em></h4>
-            </div>
-        </section> -->
-        <!-- 5-Day Weather cast -->
-        <!-- <div class="row"> -->
-            <!-- <div class="col mt-4"> -->
-                <!-- <div class="card pb-5 fiveDayCard pl-5"> -->
-                    <!-- appends 5 day -->
-                    <!-- <h5 class="card-title mt-2 mr-5">5-Day Forecast </h5>
-                    <div class="row">
-                        <div class="col fiveDayOne">
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- </div> -->
-        <!-- <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-            </div>
-          </div> -->
-        <!-- <div class="col-12 col-md-8">
-            <h2 class="cityName"></h2>
-            <h2 class="cityTemp"></h2>
-            <h2 class="cityWind"></h2>
-            <h2 class="cityHumidity"></h2>
-        </div> -->
-
-
-
+    
 
         <div class="forecastContainer"></div>
     </main>
@@ -130,4 +73,4 @@
 
 </body>
 
-</html>'
+</html>

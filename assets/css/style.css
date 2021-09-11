@@ -61,6 +61,10 @@ form::after {
 #box-tile {
     box-shadow: #FFFF00 0px 0px 2px 2px;
 }
+
+.forecastContainer{
+    display: flex;
+}
 /* .btn {
     background-color: white; 
     color: yellow; 
