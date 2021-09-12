@@ -4,7 +4,8 @@ $(document).ready(function () {
   // Fetch Weather Data/Event Listner
   $("#searchBtn").on("click", function (event) {
     event.preventDefault();
-
+    $(".forecastContainer").html('')
+                                            
     // constants for city input, api key and both urls (one for current and other for weekly forecast)
     const city = $("#cityInput").val();
     const apiKey = "94591d084c8757a9ff2a1fbb69e284b4";
@@ -51,12 +52,12 @@ $(document).ready(function () {
                             <div class="card">
                              <div class="card-content">
                               <div class="content">
-                              <span>Temperature: &#176${data.daily[i].temp.day}</span>
+                              <span>Temperature: ${data.daily[i].temp.day}&#176</span>
                                </div>
                               </div>
                             </div>
                             `;
-                $("#forecastContainer").append(card)
+                $(".forecastContainer").append(card)
             }
           });
       });
