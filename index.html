@@ -52,20 +52,30 @@
          <div class="todaysForecast">
           <h1 class="title is-3 has-text-centered" id="cityName"></h1>
           <!-- <img  alt="a simple icon reflecting the current weather" id="iconToday"> -->
-          <span>Temperature: &#176<span id="temp"></span></span>
+          <span>Temperature: <span id="temp"></span></span>°
             <br>
-            <span id="hum"></span>
             <br>
-            <span id="wind"></span>
+            <span>Humidity: <span id="hum"></span></span>%
             <br>
-            <span id="uvi"></span>
+            <br>
+            <span>Wind Speed: <span id="wind"></span></span> MPH
+            <br>
+            <br>
+            <span>UV: <span id="uvi"></span></span>
          </div>
      </div>
     </section>
-    
+    <hr class="has-background-info"> 
 
-        <div class="forecastContainer"></div>
-    </main>
+        <div class="subtitle box has-background-warning" id="forecast">
+            <h1 class="subtitle">
+                5 Day Forecast
+            </h1>
+            <div class="box has-background-info">
+                <div class="forecastContainer"></div>
+            </div>
+        </div>
+        </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
