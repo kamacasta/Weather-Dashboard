@@ -56,9 +56,9 @@ $(document).ready(function () {
                               <div class="content">
                             <span>Temperature: ${data.daily[i].temp.day}&#176</span>
                               <br>
-                              <span>Humidity: ${data.daily[i].humidity.day}%</span>
+                              <span>Humidity: ${data.daily[i].humidity}%</span>
                               <br>
-                              <span>Wind: ${data.daily[i].wind_speed.day} MPH</span>
+                              <span>Wind: ${data.daily[i].wind_speed} MPH</span>
                                </div>
                               </div>
                             </div>
